@@ -11,15 +11,17 @@
     "lib"
   ],
   "dependencies": {
+    "@lsky/tools": "^1.0.0",
+    "axios": "^0.24.0",
+    "string-format": "^2.0.0"
+  },
+  "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "@lsky/tools": "^1.0.0",
-    "axios": "^0.24.0",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
-    "string-format": "^2.0.0",
     "terser-webpack-plugin": "^5.2.4",
     "webpack": "^5.58.2",
     "webpack-cli": "^4.9.1"
