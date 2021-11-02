@@ -1,5 +1,5 @@
 {
-  "name": "@cake/util",
+  "name": "@lsky/cake-util",
   "version": "0.0.1",
   "main": "lib/index.js",
   "license": "MIT",
