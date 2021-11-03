@@ -1,11 +1,11 @@
 {
   "name": "@lsky/cake-util",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=publish babel src --out-dir lib",
-    "pu": "npm build && npm publish --access public"
+    "pu": "npm run build && npm publish --access public"
   },
   "files": [
     "lib"
