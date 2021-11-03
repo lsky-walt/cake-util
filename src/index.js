@@ -67,6 +67,27 @@ export const transformToProps = (node) => {
   return result
 }
 
+export function getNodeByKeys(key, data) {
+  if (isEmpty(key) || isEmpty(data)) return null
+  const keys = key.split(".")
+  let d = data
+  let k = null
+  while (!isEmpty(keys)) {
+    k = keys.shift()
+    // eslint-disable-next-line no-loop-func
+    const n = d && d.find((v) => v.key === k)
+    d = n
+    if (!isEmpty(keys)) {
+      d = obtain(d, "children")
+    }
+  }
+
+  if (obtain(d, "key") === k) {
+    return d
+  }
+  return null
+}
+
 /**
  * 通过 key 获取 props
  * 注意：需要特殊处理 type = fetch
