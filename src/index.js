@@ -41,7 +41,7 @@ const NodeKeys = [
  * @param {object} node 节点
  * @returns props
  */
-const transformToProps = (node) => {
+export const transformToProps = (node) => {
   const result = {}
   if (node.type === "fetch") {
     return result
