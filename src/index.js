@@ -290,3 +290,8 @@ export const handleRawData = (data) => {
   })
   return [st, result]
 }
+
+export const mergeStaticToRaw = (st, data) => {
+  if (isEmpty(st)) return data
+  return [...st, ...data]
+}
